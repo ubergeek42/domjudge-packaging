@@ -84,7 +84,7 @@ install: build
 	cp lib/lib.error.sh $(DJJH)/usr/share/domjudge/
 
 	# We'd like these to be amendable by the admin(See domjudge-domserver.links)
-	cd $(DJDS)/usr/share/domjudge/webapp/web/images/ && \
+	cd $(DJDS)/usr/share/domjudge/webapp/public/images/ && \
 		mv teams affiliations ../../../../../../var/lib/domjudge/images/
 
 	# This we'll symlink from the system-copy
